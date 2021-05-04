@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="ShoppingListApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+
+    <!-- AngularJS code to enhance Javascript -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <!-- Javascript File -->
+    <script type="text/javascript" src="app.js"></script>
+
+    <!-- Bootstrap code to enhance CSS -->
+    <link rel="stylesheet" type ="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" type ="text/css" href="style.css">
+    
+</head>
+<body ng-controller = "listController">
+    <h1>Example #1 with AngularJS</h1>
+    <br>
+    <h3>Shopping List</h3>
+    <h4>So far <strong><big>{{list.length}}</big></strong> items</h4>
+    <table>
+        <tr ng-repeat="item in list">
+            <td>{{ $index+1 }}</td>
+            <td>{{ item }}</td>
+            <td><button class="btn btn-danger" ng-click="remove(item)">X</button></td>
+        </tr>
+    </table>
+    <br>
+    <input type="text" ng-model="newItem">
+    <button class="btn btn-success" ng-click="addItem(newItem)">Add</button>
+</body>
+</html>

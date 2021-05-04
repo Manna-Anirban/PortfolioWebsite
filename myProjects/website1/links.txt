@@ -1,0 +1,26 @@
+Font Awesome link:
+
+<script src="https://kit.fontawesome.com/f0e6fbdf5e.js" crossorigin="anonymous"></script>
+
+<i class="fas fa-chart-pie fa-4x"></i>
+<i class="fas fa-globe fa-4x"></i>
+<i class="fas fa-cog fa-4x"></i>
+<i class="fas fa-users fa-4x"></i>
+
+
+
+Main section image link (CSS):
+
+url(https://image.ibb.co/kYJK8x/showcase.jpg);
+
+
+
+Info section image link:
+
+<img src="https://image.ibb.co/j4Qz8x/pic1.jpg" alt="">
+
+
+
+Portfolio Section Class Link:
+
+ <img src="https://source.unsplash.com/random/200x200" alt="">
