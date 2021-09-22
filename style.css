@@ -93,6 +93,12 @@ img{
     padding: 1.3rem; 
 }
 
+.portfolio .box:hover{
+    background: var(--dark);
+    color:var(--light); 
+    transition: 300ms ease-in-out; 
+}
+
 /* Info Section (about.html) */
 .info{
     display: grid;
